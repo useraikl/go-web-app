@@ -8,7 +8,7 @@ image:
   repository: ketanl/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "25453360068"
+  tag: "25454650126"
 
 ingress:
   enabled: false
