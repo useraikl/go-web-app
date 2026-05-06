@@ -7,11 +7,12 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-## Access the Argo CD UI (Loadbalancer service) 
+## Access the Argo CD UI (Loadbalancer service)
 
 ```bash
 kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
 ```
+
 ## Access the Argo CD UI (Loadbalancer service) -For Windows
 
 ```bash
@@ -23,3 +24,5 @@ kubectl patch svc argocd-server -n argocd -p '{\"spec\": {\"type\": \"LoadBalanc
 ```bash
 kubectl get svc argocd-server -n argocd
 ```
+
+# note
